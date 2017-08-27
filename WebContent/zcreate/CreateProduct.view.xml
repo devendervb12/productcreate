@@ -1,0 +1,29 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+        xmlns:sf="sap.ui.layout.form"
+		controllerName="zcreate.CreateProduct" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Product Create">
+		<content>
+	           <sf:SimpleForm id="idSf">
+	              <Label text="Product ID"/>
+	              <Input id="idProd"/>
+	              
+	              <Label text="Name"/>
+	              <Input id="idName"/>
+	              
+	                <Label text="Category"/>
+	              <Input id="idCategory"/>
+	              
+	              <Label text="Supplier ID"/>
+	              <Input id="idSupplier"/>
+	              
+	          </sf:SimpleForm>
+		</content>
+		<footer>
+		   <Bar>
+		     <contentRight>
+		        <Button text="Create" press="createProduct"/>
+		     </contentRight>
+		   </Bar>
+		</footer>
+	</Page>
+</core:View>
